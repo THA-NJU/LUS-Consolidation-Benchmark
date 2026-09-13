@@ -1,0 +1,6 @@
+-r base.txt
+matplotlib
+opencv-python
+scikit-image
+scikit-learn
+segmentation-models-pytorch

@@ -1,0 +1,19 @@
+{
+  "python": {
+    "base": "../.venvs/base/bin/python",
+    "ssm": "../.venvs/ssm/bin/python",
+    "usfm": "../.venvs/usfm/bin/python",
+    "sam": "../.venvs/sam/bin/python",
+    "samus": "../.venvs/samus/bin/python",
+    "sam3": "../.venvs/sam3/bin/python"
+  },
+  "sources": {
+    "usfm": "../.external/usfm",
+    "s2denet": "../.external/s2denet",
+    "samus": "../.external/samus",
+    "medsam": "../.external/medsam",
+    "sam2": "../.external/sam2",
+    "sam3": "../.external/sam3",
+    "usfm_mmseg": "../.external/usfm_mmseg"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "usfm": {
+    "url": "https://github.com/openmedlab/USFM.git",
+    "commit": "960a1e1d30b9490e53e6e7cf1b4dd24425fffc67"
+  },
+  "s2denet": {
+    "url": "https://github.com/PXinTao/S2DENet.git",
+    "commit": "40a3c156db6a1a5578e5898db4d2e9f993b49001"
+  },
+  "samus": {
+    "url": "https://github.com/xianlin7/SAMUS.git",
+    "commit": "030ed07cebe44bd40a00e97c9044660b7dc12523"
+  },
+  "medsam": {
+    "url": "https://github.com/bowang-lab/MedSAM.git",
+    "commit": "d71e8a1a99ad751840a22a7fa3ecfb4166fb1488"
+  },
+  "sam2": {
+    "url": "https://github.com/facebookresearch/sam2.git",
+    "commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4"
+  },
+  "sam3": {
+    "url": "https://github.com/facebookresearch/sam3.git",
+    "commit": "46957e47805eaa273f4aa7bbbd25a88bca9108ce"
+  },
+  "usfm_mmseg": {
+    "url": "https://github.com/George-Jiao/mmsegmentation.git",
+    "commit": "3168c5ef68ad0b796df4f1ce56dd286c3741f4ad"
+  }
+}

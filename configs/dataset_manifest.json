@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "created_after_clinician_curation": true,
+  "sizes": {
+    "512": {
+      "directory": "Size_512",
+      "counts": {
+        "train": 16131,
+        "val": 2111,
+        "test": 1539
+      },
+      "patients": {
+        "train": 93,
+        "val": 12,
+        "test": 11
+      }
+    },
+    "224": {
+      "directory": "Size_224_filtered",
+      "counts": {
+        "train": 26017,
+        "val": 2796,
+        "test": 3557
+      },
+      "patients": {
+        "train": 93,
+        "val": 12,
+        "test": 11
+      }
+    }
+  },
+  "curation_note": "Current manuscript: 19781 full frames and 32370 sliding crops; no additional GT component-size exclusion.",
+  "patient_count_note": "116 patients. Patient-disjoint splits within each track. 224 crops were repartitioned by patient after cropping; corresponding splits differ across tracks."
+}

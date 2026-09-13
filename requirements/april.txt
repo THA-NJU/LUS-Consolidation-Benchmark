@@ -1,0 +1,6 @@
+-r base.txt
+einops
+timm
+PyYAML
+# Install mamba-ssm/selective-scan and the CUDA toolkit only in compatible
+# Mamba/RWKV environments; see docs/ENVIRONMENTS.md.

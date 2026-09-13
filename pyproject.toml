@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lus-consolidation-benchmark"
+version = "0.1.0"
+description = "Unified training and evaluation code for lung-ultrasound consolidation segmentation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = [
+  "numpy",
+  "Pillow",
+  "scipy",
+  "tqdm",
+]
+
+[tool.setuptools.packages.find]
+include = ["lusbench*"]

@@ -1,0 +1,13 @@
+LUS Consolidation Segmentation Benchmark
+Required Notice: Copyright 2026 LUSBench contributors
+
+Except for separately licensed third-party material, repository-authored code
+and documentation are provided under the PolyForm Noncommercial License 1.0.0.
+See LICENSE and https://polyformproject.org/licenses/noncommercial/1.0.0.
+
+This product includes a minimal source subset derived from APRIL-MedSeg.
+See THIRD_PARTY_NOTICES.md and third_party/april_medseg/PROVENANCE.md.
+
+The repository includes a patch for separately obtained SAM3 source.
+SAM3 materials are governed by the SAM License copied under
+third_party/sam3_patches/LICENSE.

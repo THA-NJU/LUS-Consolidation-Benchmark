@@ -1,0 +1,60 @@
+{
+  "protocol_version": "formal-v2",
+  "datasets": {
+    "512": "Size_512",
+    "224": "Size_224_filtered"
+  },
+  "training": {
+    "max_epochs": 600,
+    "early_stopping_patience": 15,
+    "validation_interval": 1,
+    "warmup_epochs": 10,
+    "samples_per_epoch": null,
+    "seed": 42,
+    "learning_rate_default": 0.0001,
+    "balanced_sampler": false
+  },
+  "model_selection": "highest validation per-image mean Dice",
+  "evaluation_order": [
+    "train",
+    "val",
+    "test"
+  ],
+  "evaluation": {
+    "threshold_policy": "fixed; never selected on validation or test data",
+    "threshold_default": 0.5,
+    "metrics": [
+      "dice",
+      "iou",
+      "precision",
+      "recall",
+      "hd",
+      "hd95",
+      "cc_delta",
+      "abs_cc_delta",
+      "inference_time_ms"
+    ],
+    "cc_delta": "gt_connected_components - predicted_connected_components",
+    "empty_prediction_rule": "GT non-empty and prediction empty gives Dice/IoU 0 and is counted separately",
+    "gt_empty_rule": "exclude from foreground-case metric means",
+    "empty_prediction_hd_hd95": "track side length: 512 pixels for Size_512, 224 for Size_224; included in the per-image mean and population standard deviation"
+  },
+  "released_split_counts": {
+    "512": {
+      "train": 16131,
+      "val": 2111,
+      "test": 1539
+    },
+    "224": {
+      "train": 26017,
+      "val": 2796,
+      "test": 3557
+    }
+  },
+  "notes": [
+    "Current manuscript counts and track-specific patient partitions are authoritative.",
+    "Size_224_filtered is a historical directory name, not a further filtering instruction.",
+    "Ultrasound-pretrained initialization when available, otherwise random initialization.",
+    "Historical dataset construction utilities must not be rerun on the finalized inventories."
+  ]
+}
